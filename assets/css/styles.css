@@ -235,6 +235,11 @@ body.dark-theme {
   align-items: center;
 }
 
+.img-nav-logo {
+  width: 60px;
+  height: auto;
+}
+
 .nav__menu__active {
   color: var(--first-color);
 }
@@ -768,6 +773,13 @@ body.dark-theme {
   background-color: var(--first-color);
 }
 
+.footer__logo {
+  display: inline-block;
+  justify-content: center;
+  width: 60px;
+  height: auto;
+}
+
 .footer__container {
   padding-block: 4rem 2rem;
   text-align: center;
@@ -783,10 +795,17 @@ body.dark-theme {
   color: var(--white-color);
 }
 
-.footer__logo {
+.logo-footer {
+  width: 60px;
+  height: auto;
+}
+
+.footer__logo .logo-footer {
   font-size: var(--h1-font-size);
   font-weight: var(--font-semi-bold);
-  justify-self: center;
+  width: 60px;
+  height: auto;
+  justify-content: center;
 }
 
 .footer__links,
@@ -808,6 +827,8 @@ body.dark-theme {
 
 .footer__logo:hover .footer__link:hover {
   text-decoration: underline;
+  width: 60px;
+  height: auto;
 }
 
 .footer__social {
@@ -862,6 +883,17 @@ body.dark-theme {
 .show-scroll {
   bottom: 3rem;
 }
+
+/*============= MAPS  ==============*/
+.maps__container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.footer__container {
+  padding: 2rem 0;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 320px) {
@@ -977,7 +1009,7 @@ body.dark-theme {
   .nav__list {
     flex-direction: row;
     align-items: center;
-    column-gap: 3rem;
+    column-gap: 2rem;
   }
 
   .change-theme {
@@ -1096,6 +1128,11 @@ body.dark-theme {
 
   .footer__logo {
     font-size: var(--h2-font-size);
+    width: 60px;
+    height: auto;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
   }
 
   .footer__links {
