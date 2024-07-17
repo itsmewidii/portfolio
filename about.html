@@ -1,36 +1,251 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
 
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" />
 
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-      <title>About - Responsive portfolio website - Bedimcode</title>
-   </head>
-   <body>
-      <!--==================== HEADER ====================-->
-      
+    <title>Tentang Saya</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header header-pages" id="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">Tri Widya Ningsih</a>
 
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <!--==================== ABOUT ====================-->
-         <section class="about section">
-            
-         </section>
-      </main>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Beranda</a>
+            </li>
 
-      <!--==================== FOOTER ====================-->
-      
+            <li class="nav__item">
+              <a href="about.html" class="nav__link nav__menu__active">Tentang Saya</a>
+            </li>
 
-      <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
-   </body>
+            <li class="nav__item">
+              <a href="galeri.html" class="nav__link">Galeri</a>
+            </li>
+
+            <li class="nav__item">
+               <a href="sertifikat.html" class="nav__link">Sertifikat</a>
+           </li>
+
+            <li class="nav__item">
+              <a href="work.html" class="nav__link">portofolio</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="contact.html" class="button">Kontak</a>
+            </li>
+          </ul>
+
+          <!-- Close Button -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav__actions">
+          <!-- Theme Buttom -->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+          <!-- Toggle Butoon -->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-apps-2-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== ABOUT ====================-->
+      <section class="about section">
+        <h2 class="section__title">
+          Kepribadian saya <br />
+          dan Informasi
+        </h2>
+
+        <!-- <div class="about__container about__page container grid">
+          <div class="about__perfil perfil">
+            <div class="perfil__content">
+              <img src="assets/img/about-perfil.png" alt="Gambar" class="perfil__img" />
+            </div>
+          </div>
+
+          <div class="about__content grid">
+            <div class="about__data grid">
+              <div class="about__info grid">
+                <h1 class="about__name">Tri Widya Ningsih</h1>
+                <h2 class="about__profession">Web & Visual Designer</h2>
+                <p class="about__description">
+                  Saya Tri Widya Ningsih, seorang siswa Kelas 12 denganl <br />
+                  jurusan Pengembangan Perangkat Lunak dan Gim <br />
+                  (PPLG). Saya memiliki pengalaman yang mapan dalam <br />
+                  pengembangan perangkat lunak menggunakan HTML, <br />
+                  CSS, serta keahlian dalam desain web dan analisis. <br /><br />
+
+                  Kemampuan komunikasi yang lancar, kemampuan <br />
+                  kerja sama dalam tim, dan keterampilan manajemen <br />
+                  waktu saya telah terbukti selama ini. Saya <br />
+                  berkomitmen untuk terus meningkatkan keterampilan <br />
+                  teknis dan soft skill, serta tetap bersemangat dalam <br />
+                  proses pembelajaran. <br /><br />
+
+                  Saya menghargai kesempatan untuk menjelaskan <br />
+                  portofolio saya dengan Anda. Saya yakin dengan <br />
+                  dedikasi dan kompetensi yang saya miliki, saya <br />
+                  mampu menciptakan inovasi yang berarti dalam <br />
+                  pengembangan aplikasi di masa depan.
+                </p>
+              </div>
+
+              <a href="contact.html" class="about__button button">Hubungi Saya</a>
+            </div>
+
+            <div class="about__skills">
+              <h3 class="about__skills-title">Keahlian Saya Adalah</h3>
+
+              <div class="about__skills-content grid">
+                <img src="assets/img/about-html.svg" alt="Gambar" class="about__skills-img" />
+                <img src="assets/img/about-css.svg" alt="Gambar" class="about__skills-img" />
+                <img src="assets/img/about-javascript.svg" alt="Gambar" class="about__skills-img" />
+                <img src="assets/img/about-git.svg" alt="Gambar" class="about__skills-img" />
+                <img src="assets/img/about-react.svg" alt="Gambar" class="about__skills-img" />
+                <img src="assets/img/about-github.svg" alt="Gambar" class="about__skills-img" />
+                <img src="assets/img/about-next-js.svg" alt="Gambar" class="about__skills-img" />
+                <img src="assets/img/about-sass.svg" alt="Gambar" class="about__skills-img" />
+                <img src="assets/img/about-tailwind-css.svg" alt="Gambar" class="about__skills-img" />
+                <img src="assets/img/about-figma.svg" alt="Gambar" class="about__skills-img" />
+                <img src="assets/img/about-sketch.svg" alt="Gambar" class="about__skills-img" />
+                <img src="assets/img/about-photoshop.svg" alt="Gambar" class="about__skills-img" />
+                <img src="assets/img/about-illustrator.svg" alt="Gambar" class="about__skills-img" />
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- <div class="about__container about__page container grid"> -->
+        <!-- <div class="about__perfil perfil">
+            <div class="perfil__content">
+              <img src="assets/img/about-perfil.png" alt="Gambar" class="perfil__img" />
+            </div>
+          </div> -->
+
+        <div class="about__content grid">
+          <div class="about__data grid">
+            <div class="about__info grid">
+              <h1 class="about__name">Tri Widya Ningsih</h1>
+              <h2 class="about__profession">Web & Visual Designer</h2>
+              <p class="about__description">
+                Saya Tri Widya Ningsih, seorang siswa Kelas 12 denganl jurusan Pengembangan Perangkat Lunak dan Gim (PPLG). Saya memiliki pengalaman yang mapan dalam pengembangan perangkat lunak menggunakan HTML, CSS, serta keahlian dalam
+                desain web dan analisis.
+
+                <br />
+                Kemampuan komunikasi yang lancar, kemampuan kerja sama dalam tim, dan keterampilan manajemen waktu saya telah terbukti selama ini.
+
+                <br />
+                Saya berkomitmen untuk terus meningkatkan keterampilan teknis dan soft skill, serta tetap bersemangat dalam proses pembelajaran. Saya menghargai kesempatan untuk menjelaskan portofolio saya dengan Anda.
+
+                <br />
+                Saya yakin dengan dedikasi dan kompetensi yang saya miliki, saya mampu menciptakan inovasi yang berarti dalam pengembangan aplikasi di masa depan.
+              </p>
+            </div>
+
+            <a href="./assets/pdf/CV-TRI-WIDYA-NINGSIH.pdf" class="about__button button">Download CV</a>
+          </div>
+
+          <div class="about__skills">
+            <h3 class="about__skills-title">Keahlian Saya Adalah</h3>
+
+            <div class="about__skills-content grid">
+              <img src="assets/img/about-html.svg" alt="Gambar" class="about__skills-img" />
+              <img src="assets/img/about-css.svg" alt="Gambar" class="about__skills-img" />
+              <img src="assets/img/about-javascript.svg" alt="Gambar" class="about__skills-img" />
+              <img src="assets/img/about-git.svg" alt="Gambar" class="about__skills-img" />
+              <img src="assets/img/about-react.svg" alt="Gambar" class="about__skills-img" />
+              <img src="assets/img/about-github.svg" alt="Gambar" class="about__skills-img" />
+              <img src="assets/img/about-next-js.svg" alt="Gambar" class="about__skills-img" />
+              <img src="assets/img/about-sass.svg" alt="Gambar" class="about__skills-img" />
+              <img src="assets/img/about-tailwind-css.svg" alt="Gambar" class="about__skills-img" />
+              <img src="assets/img/about-figma.svg" alt="Gambar" class="about__skills-img" />
+              <img src="assets/img/about-sketch.svg" alt="Gambar" class="about__skills-img" />
+              <img src="assets/img/about-photoshop.svg" alt="Gambar" class="about__skills-img" />
+              <img src="assets/img/about-illustrator.svg" alt="Gambar" class="about__skills-img" />
+            </div>
+          </div>
+
+          <div class="about__skills">
+            <h3 class="about__skills-title">Pendidikan</h3>
+
+            <div class="about__skills-content">
+              <p class="about__description" style="padding: 0">2022-2024 SMKN 1 Ciomas</p>
+              <p style="padding: 0" class="about__description">2019-2022 SMP Ma'arif NU Ciomas</p>
+              <p style="padding: 0" class="about__description">2013-2019 SDN laladon 03</p>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <div class="footer__content gird">
+          <a href="" class="footer__logo">Tri Widya Ningsih</a>
+
+          <ul class="footer__links">
+            <li>
+               <a href="about.html" class="footer__link">Tentang Saya</a>
+            </li>
+            <li>
+              <a href="galeri.html" class="footer__link">Galeri</a>
+            </li>
+            <li>
+               <a href="sertifikat.html" class="footer__link">Sertifikat</a>
+             </li>
+            <li>
+              <a href="work.html" class="footer__link">Portofolio</a>
+            </li>
+            <li>
+              <a href="contact.html" class="footer__link">Kontak</a>
+            </li>
+          </ul>
+
+          <div class="footer__social">
+            <a href="https://api.whatsapp.com/send?phone=6288214407298&text=Hello, more information!" target="_blank" class="footer__social-link">
+              <i class="ri-whatsapp-line"></i>
+            </a>
+
+            <a href="https://www.instagram.com/__itswdya" target="_blank" class="footer__social-link">
+              <i class="ri-instagram-fill"></i>
+            </a>
+
+            <a href="mailto:triwidyaningsih193@gmail.com" target="_blank" class="footer__social-link">
+              <i class="ri-mail-line"></i>
+            </a>
+
+            <a href="https://www.tiktok.com/@hi.wid1" target="_blank" class="footer__social-link">
+              <i class="ri-tiktok-line"></i>
+            </a>
+          </div>
+        </div>
+
+        <span class="footer__copy"> &#169; All Rights Reserved By Tri Widya Ningsih </span>
+      </div>
+    </footer>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
